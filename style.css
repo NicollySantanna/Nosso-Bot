@@ -33,7 +33,6 @@ body{
 .container{
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
     height: 100vh;
     background-color: var(--darkgreen);
     color:var(--white);
@@ -42,32 +41,106 @@ body{
 header{
     display: flex;
     width: 100vw;
-    flex-direction: column;
     background-color: var(--green);
     padding: 1rem;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+header img{
+    width: 80px;
+    height: auto;
+}
+
+header h1{
+    margin-left: 20px;
+    font-size: 28px;
 }
 
 main{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    margin-right: 500px;
-    padding: 200px;
-   
 }
 
-main p{
+main .bot{
     background-color: var(--gray-100);
     color: var(--gray-600);
-    height: 50px;
     border-radius: 10px;
     align-items: center;
-    padding: 1rem;
+    padding: 2.5rem;
 }
+
+main .client{
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 10px;
+    align-items: center;
+    padding: 2.5rem;
+}
+
 
 main small{
     font-size: 12px;
     text-align: center;
     margin-left: 3px;
 }
+.flex{
+    display: flex;
+    justify-content: space-between;
+   
+}
 
+.left{
+    width: 40%;
+    padding: 2rem;
+    display: inline-block;
+    margin-left: 10%;
+    
+}
+
+.right{
+    width: 40%;
+    padding: 2rem;
+    display: inline-block;
+    margin-top: 8%;
+    margin-right: 10%;
+}
+
+.right img{
+    margin-left: 90%;
+}
+
+main img{
+    width: 50px;
+}
+
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.inputs input{
+    width: 50rem;
+    height: 6rem;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    border: none;
+    font-size: 14px;
+}
+
+.inputs button{
+    border: none;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin-left: 10px;
+    background-color: var(--green);
+    color: var(--white);
+    cursor: pointer;
+    
+}
